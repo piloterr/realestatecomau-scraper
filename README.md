@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "Sydney, NSW",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
